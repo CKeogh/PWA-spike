@@ -24,6 +24,7 @@ class App extends React.Component {
         <div className="updatePoster">
           <Text content={"Update Poster"} />
           <BigButton action={this.resetCount} text="reset count" />
+          <Text content="Why isnt this working?" />
         </div>
       </div>
     )
