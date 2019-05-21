@@ -91,16 +91,16 @@
   }
 
   .App {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
   }
-
+ 
   .calendar {
-    height: 50%;
+    height: 400px;
   }
 
   .header {
-    height: 50%;
+    height: 200px;
   }
 }
