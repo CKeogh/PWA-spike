@@ -79,6 +79,12 @@
   transition: 0s
 }
 
+@media (max-width: 992px) {
+  div#topbar {
+      display: none;
+      }
+  }
+
 @media only screen and (max-width: 500px) {
   .updatePoster {
     visibility: hidden;
