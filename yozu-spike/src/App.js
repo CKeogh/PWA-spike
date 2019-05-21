@@ -17,7 +17,8 @@ class App extends React.Component {
           <BigButton action={this.increaseCount} text="Press me" />
         </div>
         <div className="calendar">
-          <Text content={"Count"} />
+          <Text content="Count" />
+          <Text content="HELLOO" />
           <Counter count={this.state.count} />
         </div>
         <div className="updatePoster">
