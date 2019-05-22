@@ -18,13 +18,11 @@ class App extends React.Component {
         </div>
         <div className="calendar">
           <Text content="Count" />
-          <Text content="HELLOO" />
           <Counter count={this.state.count} />
         </div>
         <div className="updatePoster">
           <Text content={"Update Poster"} />
           <BigButton action={this.resetCount} text="reset count" />
-          <Text content="Why isnt this working?" />
         </div>
       </div>
     )

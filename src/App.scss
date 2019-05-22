@@ -47,6 +47,7 @@ $scheme-lightBlue: rgb(48, 180, 206);
 
 .BigButton:focus {
     outline: none;
+
   }
   
   .BigButton {
@@ -59,6 +60,7 @@ $scheme-lightBlue: rgb(48, 180, 206);
     padding: 20px;
     width: 200px;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
