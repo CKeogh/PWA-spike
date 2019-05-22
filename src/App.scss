@@ -1,0 +1,107 @@
+$button-color: rgb(201, 49, 49);
+$scheme-blue: rgb(19, 93, 108);
+$scheme-green: rgb(19, 108, 19);
+$scheme-red: rgb(108, 48, 19);
+$scheme-lightBlue: rgb(48, 180, 206);
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 200px 1fr / 3fr 2fr;
+    grid-template-areas:
+        'header header'
+        'calendar updatePoster';
+}
+
+@mixin format($color) {
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: $color;
+}
+
+.header {
+    @include format($scheme-green);
+    grid-area: header;
+}
+
+.calendar {
+    @include format($scheme-red);
+    grid-area: calendar;
+}
+
+.updatePoster {
+    @include format($scheme-blue);
+    grid-area: updatePoster;
+}
+
+.Text {
+    color: white;
+}
+
+.Counter {
+    font-size: 100px;
+    color: $scheme-lightBlue;
+}
+
+.BigButton:focus {
+    outline: none;
+  }
+  
+  .BigButton {
+    position: relative;
+    background-color: rgb(201, 49, 49);
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .BigButton:after {
+    content: "";
+    background: rgb(235, 87, 87);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .BigButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  @media only screen and (max-width: 500px) {
+    .updatePoster {
+      visibility: hidden;
+    }
+  
+    .App {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+   
+    .calendar {
+      height: 600px;
+    }
+  
+    .header {
+      padding: 20px;
+    }
+  }

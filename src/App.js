@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Text from './components/Text';
 import BigButton from './components/BigButton';
 import Counter from './components/Counter';
